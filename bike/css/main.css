@@ -1,0 +1,18 @@
+body{
+    margin: 0;
+}
+
+nav{
+    background-color: #7fdbff;
+    margin: auto;
+    margin-top: 10px;
+}
+.menu__link{
+    text-decoration: none;
+    color:black;
+}
+.grid{
+    display: grid;
+    margin: 0 auto;
+    max-width: 960px;
+}

@@ -11,20 +11,16 @@ body{
     border-radius: 15px;
     background-color: deepskyblue;
     font-size: 35px;
-    
     font-family: "Open Sans Condensed";
 }
 .footer{
     width: 100px;
     font-size: 14px;
     margin: auto;
-    
-}
+    }
 .inProgress a {
     text-decoration: none;
     color: white;
-    
-   
 }
 .inProgress p{
     margin-top: 25px;
