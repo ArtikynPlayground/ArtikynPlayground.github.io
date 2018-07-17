@@ -41,6 +41,7 @@ nav{
 footer{
     background-color: lavender;
     grid-area: footer;
+    margin-top: 20px;
     
 }
 main{
@@ -52,3 +53,44 @@ main{
     
 }
 
+
+@media screen and (max-width: 960px) {
+    .grid{
+        grid-template-rows: auto 100px;
+        grid-template-columns: 90px auto;
+        grid-template-areas: "nav main"
+                             "footer footer";
+    }
+    nav{
+        padding: 0;
+        flex-direction: column;
+        justify-content: flex-start;
+    }
+    
+    
+.menuContainer{
+    margin: 0px auto;
+    padding-top: 60px;
+    margin-top: 35px;
+}
+.menuContainer_social{
+    display: flex;
+    align-items: flex-end;
+    
+}
+    .menu__text{
+    font-size: 18px;
+     
+}
+   .menuContainer_social img  {
+         height: 20px;
+         width: 20px;
+    }
+    footer{
+        margin: 0;
+    }
+    main{
+        margin: 0;
+    }
+    
+}
