@@ -54,7 +54,7 @@ main{
 }
 
 
-@media screen and (max-width: 960px) {
+@media only screen and (max-width: 768px) {
     .grid{
         grid-template-rows: auto 100px;
         grid-template-columns: 90px auto;
