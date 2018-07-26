@@ -25,3 +25,15 @@ body{
 .inProgress p{
     margin-top: 25px;
 }
+.dev_links{
+   margin: auto;
+}
+.dev_links a{
+    text-decoration: none;
+    color: black;
+    font-size: 15pt;
+    font-family: "Open Sans Condensed";  
+}
+h3{
+    margin:0;
+}
