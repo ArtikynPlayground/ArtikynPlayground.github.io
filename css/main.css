@@ -1,6 +1,9 @@
 body{
     margin:0;
 }
+#wrapper{
+    margin-top: 15%;
+}
 .inProgress{
     margin: auto;
     margin-top:10px;
