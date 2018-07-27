@@ -40,3 +40,12 @@ body{
 h3{
     margin:0;
 }
+.inProgress:hover{
+    transition: 0.8s;
+    background-color: #0099cc;
+    border-color: #0099cc;
+}
+.dev_links a:hover{
+    transition: 0.8s;
+    color: #0099cc;
+}
