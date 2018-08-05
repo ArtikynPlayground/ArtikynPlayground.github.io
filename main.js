@@ -1,3 +1,3 @@
-function fuckyou(){
-    alert("Lexa pidr")
+function loveyou(){
+    alert("Love you, Marvik~")
 }

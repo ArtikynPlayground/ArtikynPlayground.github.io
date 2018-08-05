@@ -10,9 +10,9 @@ body{
     height: 100px;
     width: 300px;
     color: white;
-    border: 3px solid deepskyblue;
+    border: 3px solid black;
     border-radius: 15px;
-    background-color: deepskyblue;
+    background-color: black;
     font-size: 35px;
     font-family: "Open Sans Condensed";
 }
@@ -42,10 +42,10 @@ h3{
 }
 .inProgress:hover{
     transition: 0.8s;
-    background-color: #0099cc;
-    border-color: #0099cc;
+    background-color: #800000;
+    border-color: #800000;
 }
 .dev_links a:hover{
     transition: 0.8s;
-    color: #0099cc;
+    color: #800000;
 }
