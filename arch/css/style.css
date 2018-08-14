@@ -258,6 +258,9 @@ ul.top-links li a i.fa:hover {
 	padding-left: 0.5em;
 	padding-right: 0.5em;
 }
+div > h2 >a{
+    font-family: "Rainbow Bridge Personal Use";
+}
 .small12 {
 	width: 100%;
 }
@@ -334,38 +337,50 @@ ul.top-links li a i.fa:hover {
 .navbar-default {
     background: none;
     border: none;
+    
 }
 .navbar {
     margin-bottom: 0;
+    
 }
 .navbar-brand {
+    
     height: 84px;
     padding: 20px 0 0;
     font-size: 1.2em;
     line-height: 45px;
+    font-family: "Rainbow Bridge Personal Use";
+    
 }
 .navbar-brand span {
 font-weight:100;
+    color: #fc5a0a
+    
 }
 .navbar-default .navbar-brand,.navbar-default .navbar-brand:hover, .navbar-default .navbar-brand:focus {
       color: #fff;
        font-weight: bold;
+    
 }
 .navbar-default .navbar-nav > .active > a, .navbar-default .navbar-nav > .active > a:hover, .navbar-default .navbar-nav > .active > a:focus {
     color:#ff7200;
     background: none;
+    
 }
 .navbar-nav > li > a {
 	font-size: 1em;
 	text-transform:uppercase;
+    
 }
 .navbar-default .navbar-nav > li > a {
     color:#fff;
+    
 }
 .navbar-collapse {
     padding: 0;
     border-top: none;
     box-shadow: none;
+    
 }
 .navbar-default .navbar-collapse, .navbar-default .navbar-form {
     border: none;
@@ -647,6 +662,10 @@ position:relative;
 	display:none;
 	}
 .fa-vk{
+    font-size: 20px;
+    color: white;
+}
+.fa-whatsapp{
     font-size: 20px;
     color: white;
 }
@@ -1049,18 +1068,18 @@ ul.top-links.two.three li a i.fa:hover{
 /*-- //newsletter --*/
 /*-- footer --*/
 .footer{
-	padding: 5em 0;
+	padding: 1.5em 0;
     background: #1d1d1d;
 }
 .agileinfo_footer_grid h2 a{
-	    font-size: 1em;
-     color: #fff;
-    text-decoration: none;
-    font-weight: bold;
-    text-transform: uppercase;
+	    font-size: 1.5em;
+      
+    color: white;
+
 }
 .agileinfo_footer_grid h2 a span{
 	font-weight:100;
+    color: #fc5a0a;
 }
 .agileinfo_footer_grid p{
 	color:#999;
@@ -1211,7 +1230,7 @@ ul.social-icons li .icon-button .pinterest:hover{
 .w3agile_footer_copy{
 	padding:1em 0;
 	text-align: center;
-    background: #000;
+    background: #1d1d1d;
 }
 .w3agile_footer_copy p{
 	color:#999;
