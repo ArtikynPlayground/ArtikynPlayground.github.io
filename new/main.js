@@ -44,3 +44,38 @@ function Clicker(){
     console.log("Количество кликов на квадрат: " + clickCount);
   
 }
+
+function colorChanger(){
+    square.style.backgroundColor = prompt("bgColor?", "green");
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+

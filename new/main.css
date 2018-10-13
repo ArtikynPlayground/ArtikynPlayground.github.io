@@ -11,3 +11,20 @@
 body{
     overflow: hidden;
 }
+@media (min-width:320px){
+    *{
+    margin: 0;
+    padding: 0;
+}
+#square{
+    width: 100px;
+    height: 100px;
+    background-color: black;
+    color: white;
+}
+body{
+    overflow: hidden;
+}
+    
+    
+}
