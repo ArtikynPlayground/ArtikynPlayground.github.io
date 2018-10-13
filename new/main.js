@@ -46,23 +46,26 @@ function Clicker(){
 }
 
 
-function getRandomColor() {
-  var letters = '0123456789ABCDEF';
-  var color = '#';
-  for (var i = 0; i < 6; i++) {
-    color += letters[Math.floor(Math.random() * 16)];
-  }
-  return color;
+//function getRandomColor() {
+//  var letter = [414a4c, 3b44b,353839,232b2b,0e111];
+//    for (var i = 0; i < 6; i++) {
+//    color  += letter[Math.floor(Math.random()*items.length)];
+//    }
+//  var color = '#';
+//  return color;
+//}
+//
+//
+
+function randomBlack(){
+    items=["#414a4c","#3b444b","#353839","#232b2b"];
+var item = items[Math.floor(Math.random()*items.length)];
+return item;
+
 }
-
-
-function setRandomColor() {
-  $("#square").css("background-color", getRandomColor());
+function setRandomBlack() {
+  $("#square").css("background-color", randomBlack());
 }
-
-
-
-
 
 
 
