@@ -10,8 +10,7 @@
 }
 
 .logo{
-    height: 60px;
-    width: 250px;
+    height: 40px;
     margin-left: 50px;
     margin-top: 20px;
 }
@@ -70,4 +69,18 @@ a{
 }
 .fa-phone:hover{
 color: red;
+}
+.span_text{
+   font-size: 30px;
+    color: #5b5bb2;
+    transition: color 0.5s ease-out;
+    font-family: 'Montserrat Alternates', sans-serif;
+    float: right;
+    margin-top: 20px;
+    margin-left: 5px;
+    
+}
+.span_text:hover{
+    color:black;
+    cursor: pointer;
 }
