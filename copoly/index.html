@@ -3,13 +3,14 @@
 <head>
     <meta charset="UTF-8">
     <title>CoPoly</title>
-    <script src="main.js"></script>
+    <script src="/js/main.js" defer></script>
     <link rel="stylesheet" href="css/main.css">
     <link href="https://fonts.googleapis.com/css?family=Montserrat+Alternates" rel="stylesheet">
     <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.5.0/css/all.css" integrity="sha384-B4dIYHKNBt8Bc12p+WXckhzcICo0wtJAoU8YZTY5qE0Id1GSseTk6S+L3BlXeVIU" crossorigin="anonymous">
     
 </head>
 <body>
+  <!--HEADER-->
    <div class="wrapper">
 <header class="main-header">
 <a href="index.html" class="">
@@ -27,6 +28,7 @@
 </div>
 
 
+
 <nav class="main-nav">
    <div class="nav-items">
     <a href="" class="font-style" class="company font-style">О компании</a>
@@ -34,6 +36,27 @@
     <a href="" class="font-style" class="news font-style">Новости</a>
     </div>
 </nav>
+<!--HEADER END-->
 
+<div class="main_content siema">
+    <div class="main_images img1"></div>
+    
+      <div class="main_images img2">
+    </div>
+       
+   </div>
+   <img class="prev" src="img/prev2.png">
+   <img class="next" src="img/next2.png">
+
+<!--<div class="main_images img2"></div>
+   <div class="main_images img3"></div>-->
+    
+
+<script src="js/siema.min.js"></script>
+<script>
+  const mySiema = new Siema();
+document.querySelector('.prev').addEventListener('click', () => mySiema.prev());
+document.querySelector('.next').addEventListener('click', () => mySiema.next());
+</script>
 </body>
 </html>
