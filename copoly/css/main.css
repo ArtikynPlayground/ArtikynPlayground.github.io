@@ -107,7 +107,7 @@ color: red;
 height: 40px;
 margin-top: -350px;
 margin-left: 10px;
-position: fixed;
+position: absolute;
 cursor: pointer;
 }
 
@@ -115,6 +115,32 @@ cursor: pointer;
 height: 40px;
 margin-top: -350px;
 margin-left: 98%;
-position: fixed;
+position: absolute;
 cursor: pointer;
+}
+
+.main_content2{
+    margin: 0 auto;
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-image: url(/copoly/img/main_content2.png);
+    height: 1000px;
+    background-position: 10% 50%;
+    border-radius: 10px;
+    margin-top: 20px;
+    position: relative;
+    }
+
+.main_slider{
+    height: 80%;
+    width: 40%;
+    background-color: white;
+    opacity: 0.6;
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    margin: auto;
+    color: black;
 }
