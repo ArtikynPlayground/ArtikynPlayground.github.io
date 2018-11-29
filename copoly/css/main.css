@@ -104,18 +104,19 @@ color: red;
 }
 
 .prev{
+
 height: 40px;
-margin-top: -350px;
-margin-left: 10px;
-position: absolute;
-cursor: pointer;
+  position: absolute;
+  left: 10px;
+  top: 50%;
+    cursor: pointer;
 }
 
 .next{
 height: 40px;
-margin-top: -350px;
-margin-left: 98%;
 position: absolute;
+right: 10px;
+top: 50%;
 cursor: pointer;
 }
 
@@ -136,12 +137,8 @@ cursor: pointer;
     width: 30%;
     background-color: white;
     opacity: 0.6;
-    position: absolute;
-    top: 0;
-    left: 0;
-    right: 0;
-    bottom: 0;
-    margin: auto;
+    margin: 0 auto;
+    margin-top: 10%;
     color: black;
 }
 

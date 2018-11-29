@@ -45,19 +45,16 @@
     </div>
        
    </div>
-   
-   <div>
-   <img class="prev" src="img/prev2.png">
-   <img class="next" src="img/next2.png">
-   </div>
+
 <!--<div class="main_images img2"></div>
    <div class="main_images img3"></div>-->
     
 <div class="main_content2 siema">
     <div class="main_slider font-style">
-        Lorem ipsum dolor sit amet, consectetur adipisicing elit. Dicta vel autem facilis corporis quas, delectus quis temporibus consectetur distinctio exercitationem perferendis est vitae totam, quia fugiat officiis? Praesentium, nihil, iure?
-        Lorem ipsum dolor sit amet, consectetur adipisicing elit. Dicta vel autem facilis corporis quas, delectus quis temporibus consectetur distinctio exercitationem perferendis est vitae totam, quia fugiat officiis? Praesentium, nihil, iure?
-        Lorem ipsum dolor sit amet, consectetur adipisicing elit. Dicta vel autem facilis corporis quas, delectus quis temporibus consectetur distinctio exercitationem perferendis est vitae totam, quia fugiat officiis? Praesentium, nihil, iure?
+     Lorem ipsum dolor sit amet, consectetur adipisicing elit. Quidem excepturi neque ipsa, ex pariatur a ullam perspiciatis fugit nam reprehenderit quos aliquid blanditiis eos eius ipsam iste tempore sint aliquam?Lorem ipsum dolor sit amet, consectetur adipisicing elit. Laborum consequuntur distinctio voluptatum vitae ad quibusdam, pariatur consequatur dolore ipsum doloremque! Quisquam impedit, quam quo fuga ullam vel modi consequatur rerum!Lorem ipsum dolor sit amet, consectetur adipisicing elit. Aut sapiente molestias reiciendis deleniti dolores saepe qui fugit ex, exercitationem perspiciatis! Eligendi cupiditate ut, harum nemo laboriosam molestias, fugiat nesciunt odit.
+    </div>
+    <div class="main_slider font-style">
+    Lorem ipsum dolor sit amet, consectetur adipisicing elit. Quidem excepturi neque ipsa, ex pariatur a ullam perspiciatis fugit nam reprehenderit quos aliquid blanditiis eos eius ipsam iste tempore sint aliquam?Lorem ipsum dolor sit amet, consectetur adipisicing elit. Laborum consequuntur distinctio voluptatum vitae ad quibusdam, pariatur consequatur dolore ipsum doloremque! Quisquam impedit, quam quo fuga ullam vel modi consequatur rerum!Lorem ipsum dolor sit amet, consectetur adipisicing elit. Aut sapiente molestias reiciendis deleniti dolores saepe qui fugit ex, exercitationem perspiciatis! Eligendi cupiditate ut, harum nemo laboriosam molestias, fugiat nesciunt odit.
     </div>
     
 </div>
@@ -104,9 +101,40 @@
 
 <script src="js/siema.min.js"></script>
 <script>
-  const mySiema = new Siema();
-document.querySelector('.prev').addEventListener('click', () => mySiema.prev());
-document.querySelector('.next').addEventListener('click', () => mySiema.next());
+
+
+const siemas = document.querySelectorAll('.siema');
+
+// Extend prototype with method that adds arrows to DOM
+// Style the arrows with CSS or JS — up to you mate
+Siema.prototype.addArrows = function() {
+    
+  // make buttons & append them inside Siema's container
+  this.prevArrow = document.createElement('img');
+  this.nextArrow = document.createElement('img');
+  this.nextArrow.className = "next";
+  this.prevArrow.className = "prev";
+  this.nextArrow.src = "/copoly/img/next2.png";
+  this.prevArrow.src = "/copoly/img/prev2.png";
+  this.selector.appendChild(this.prevArrow)
+  this.selector.appendChild(this.nextArrow)
+  
+  
+  // event handlers on buttons
+  this.prevArrow.addEventListener('click', () => this.prev());
+  this.nextArrow.addEventListener('click', () => this.next());
+}
+
+// this is fairly new way of looping through DOM Elements
+// More about ithere: https://pawelgrzybek.com/loop-through-a-collection-of-dom-elements/
+// For better compatibility I suggest using for loop
+for(const siema of siemas) {
+  const instance = new Siema({
+    selector: siema,
+  });
+  instance.addArrows();
+}
+
 </script>
 </body>
 </html>
