@@ -144,3 +144,7 @@ cursor: pointer;
     margin: auto;
     color: black;
 }
+
+.main_content2 .font-style{
+ cursor: default;
+}
