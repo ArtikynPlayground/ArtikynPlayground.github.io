@@ -132,7 +132,7 @@ cursor: pointer;
     }
 
 .main_slider{
-    height: 600px;
+    height: 500px;
     width: 30%;
     background-color: white;
     opacity: 0.8;
@@ -147,11 +147,33 @@ cursor: pointer;
 
 .main_content2 > .font-style{
     
-    width: 447px;
+    width: 427px;
     margin: 0 auto;
-    top: 60px;
+    top: 8%;
     left: 0;
     right: 0;
     font-size: 36px;
     position: absolute;
+}
+.main_siema{
+    margin-top: 20px;
+}
+
+
+
+
+
+
+
+@media screen and (min-width: 420px) {
+.main_slider{
+    
+    height: 500px;
+    width: 30%;
+    background-color: white;
+    opacity: 0.8;
+    margin: 0 auto;
+    color: black;
+    margin-top: 20%;
+}
 }
